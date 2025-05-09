@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 遮罩层和指导浮窗 -->
+    <video id="scrollVideo" autoplay muted loop playsinline>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div id="overlay" class="overlay">
+        <div class="modal-instructions">
+            <h2>Instructions</h2>
+            <p>1. Click the button below to start recording (English only)</p>
+            <p>2. Click again to stop recording</p>
+            <p>3. Your voice will be transcribed below</p>
+            <p>4. You can repeat this as many times as you'd like</p>
+            <p class="click-hint">Click anywhere to close</p>
+        </div>
+    </div>
+    
+    <h1>Dream Recorder</h1>
+
+    <div class="button-container">
+        <button id="recordButton" class="record-button">Start Recording</button>
+        <button id="helpButton" class="help-button">?</button>
+    </div>
+    
+    <div id="status" class="status">Ready</div>
+    
+    <div class="transcripts" id="transcriptsList">
+        <!-- 气泡容器 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
